@@ -24,7 +24,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="/app" element={
+          <Route path="/app/*" element={
             <MainLayout>
               <Routes>
                 <Route path="/" element={<Library />} />

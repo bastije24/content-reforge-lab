@@ -32,8 +32,12 @@ const Landing = () => {
             Lovable Spoofer
           </h1>
           <div className="flex gap-3">
-            <Button variant="outline">Login</Button>
-            <Button>Sign Up</Button>
+            <Button variant="outline" onClick={() => window.location.href = '/app'}>
+              Login
+            </Button>
+            <Button onClick={() => window.location.href = '/app'}>
+              Sign Up
+            </Button>
           </div>
         </div>
       </header>
@@ -57,11 +61,11 @@ const Landing = () => {
           </p>
           
           <div className="flex gap-4 justify-center flex-wrap">
-            <Button size="lg" className="shadow-primary">
+            <Button size="lg" className="shadow-primary" onClick={() => window.location.href = '/app'}>
               <Zap className="w-5 h-5 mr-2" />
               Get Lite - $29/mo
             </Button>
-            <Button size="lg" variant="outline" className="shadow-secondary">
+            <Button size="lg" variant="outline" className="shadow-secondary" onClick={() => window.location.href = '/app'}>
               <Sparkles className="w-5 h-5 mr-2" />
               Get Full - $79/mo
             </Button>
@@ -93,7 +97,7 @@ const Landing = () => {
                     </div>
                   ))}
                 </div>
-                <Button className="w-full mt-6" size="lg">
+                <Button className="w-full mt-6" size="lg" onClick={() => window.location.href = '/app'}>
                   Get Lite Now
                 </Button>
               </CardContent>
@@ -125,7 +129,7 @@ const Landing = () => {
                     </div>
                   ))}
                 </div>
-                <Button className="w-full" size="lg" variant="outline">
+                <Button className="w-full" size="lg" variant="outline" onClick={() => window.location.href = '/app'}>
                   Get Full Now
                 </Button>
               </CardContent>
@@ -230,10 +234,10 @@ const Landing = () => {
       <footer className="bg-gradient-subtle border-t py-12 px-4">
         <div className="container mx-auto max-w-4xl text-center">
           <div className="flex gap-4 justify-center flex-wrap mb-8">
-            <Button size="lg" className="shadow-primary">
+            <Button size="lg" className="shadow-primary" onClick={() => window.location.href = '/app'}>
               Get Lite
             </Button>
-            <Button size="lg" variant="outline" className="shadow-secondary">
+            <Button size="lg" variant="outline" className="shadow-secondary" onClick={() => window.location.href = '/app'}>
               Get Full
             </Button>
           </div>
